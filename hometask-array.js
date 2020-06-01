@@ -1,16 +1,14 @@
 /**the amount of the letters in the array
  * функция для определения кол-ва каждого символа в строке,
  * объявляем объект lettercount с пустым свойством*
- * в цикле for объвляем переменную как свойство объекта для каждого элемента в строке;
  * проверяем на условие отсутствия буквы, если условие выполняется, то переменной присваивается значение 0.**/
-function countletters(str) {
+function countletters (str) {
     var lettercount = {};
     for (var i = 0; i < str.length; i++) {
-        var letter = lettercount[str[i]];
-        if (!letter) letter = 0;
-        letter++;
+        if (!lettercount[str[i]]) lettercount[str[i]] = 1;
+        lettercount[str[i]]++;
     }
-    return letter;
+    return lettercount;
 }
 //**the amount of negative and positive numbers in the array */
 function amountnumbers(numbers) {

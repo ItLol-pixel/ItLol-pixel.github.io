@@ -10,3 +10,12 @@ fetch('http://api.openweathermap.org/data/2.5/weather?id=709930&appid=ecb0e61816
     })
     .catch(function () {
     });
+
+
+//
+let arr = ["o", "a", "k",];
+
+// удалить 3 первых элемента и заменить их другими
+arr.splice(0, 3, "о", "а", "к");
+
+alert(arr) // теперь ["Давай", "танцевать", "прямо", "сейчас"]

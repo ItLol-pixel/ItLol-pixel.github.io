@@ -34,11 +34,11 @@ function displayMessages() {
         displayMessage += `
         <li>
         <input type='checkbox' id='item_${i}' ${item.checked ? 'checked' : ''}>
-        <label for='item_${i}' class="${item.important ? 'important' : ''}>${item.todo}</label>
+        <label for='item_${i}' class="${item.important ? 'important' : ''}">${item.todo}</label>
         </li>
         `;
-        todo.innerHTML = displayMessage;
     });
+    todo.innerHTML = displayMessage;
     todo.addEventListener('contextmenu', function (event) {
         event.preventDefault();
         //при клике правой кнопки мыши вместо контекст меню будет перебираться весь массив//

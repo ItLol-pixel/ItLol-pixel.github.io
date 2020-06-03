@@ -7,7 +7,6 @@ fetch('http://api.openweathermap.org/data/2.5/weather?id=709930&appid=ecb0e61816
         document.querySelector('.clouds').textContent = data.weather[0]['description'];
         //используем иконку с сайта openweather https://openweather.org/img/wn/02d@2x.png
         document.querySelector('.features').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png">`;
-
     })
     .catch(function () {
     });

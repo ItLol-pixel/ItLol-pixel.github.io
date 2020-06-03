@@ -1,0 +1,21 @@
+body {
+  background-color: #b3f5c4;
+  font-family: sans-serif;
+  box-sizing: content-box;
+}
+.date {
+  font-size: 25px;
+}
+.container {
+  margin: 0 auto;
+  padding-top: 50px;
+}
+input,
+select {
+  font-size: 1.2em;
+}
+
+#result :hover {
+  background-color: rgb(14, 50, 66);
+  color: #eaf5ed;
+}

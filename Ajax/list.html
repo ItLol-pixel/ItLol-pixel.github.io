@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Rate</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>The official exchange rate of UAH</h1>
+    <select name="currency" id="currency">
+      <option value="USD">US Dollar</option>
+      <option value="EUR">Euro</option>
+      <option value="THB">Thai Baht</option>
+      <option value="RUB">Russian Ruble</option>
+      <option value="AUD">Australian Dollar</option>
+      <option value="HKD">Hong Kong Dollar</option>
+    </select>
+    <input type="date" name="cdate" id="cdate" />
+    <input type="button" id="btnGet" value="Get Rate..." />
+    <div id="result"></div>
+    <script src="rate.js"></script>
+  </body>
+</html>

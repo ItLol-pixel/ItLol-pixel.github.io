@@ -6,11 +6,14 @@ body {
   font-family: sans-serif;
   box-sizing: content-box;
   background-image: url(sky.jpg);
+  color: #5af583;
 }
 .container {
   margin: 0 auto;
   border: 2px solid #000;
   padding: 10px 10px;
+  color: #eb7b12;
+  font-weight: 700;
 }
 #result :hover {
   background-color: rgb(14, 50, 66);

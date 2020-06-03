@@ -1,39 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Lucky List To Do</title>
+    <title>Document</title>
   </head>
   <body>
-    <nav>
-      <ul class="topmenu">
-        <li><a href="">Currency Rate</a></li>
-        <li>
-          <a href="" class="down">SHOP</a>
-          <ul class="submenu">
-            <li><a href="">Category</a></li>
-            <li><a href="">Toothpaste</a></li>
-            <li><a href="">Whitening systems</a></li>
-            <li><a href="">Chewing gum</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="" class="down">Choose your city</a>
-          <ul class="submenu">
-            <li><a href="">Dnipro</a></li>
-            <li><a href="">Kyiv</a></li>
-            <li><a href="">Lviv</a></li>
-            <li><a href="">Kharkiv</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="https://itlol-pixel.github.io/dom_js/index.html"
-            >Chess board JS</a
-          >
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="todo_list">
+        <h1>ToDo List - Today</h1>
+        <div class="create_new_todo">
+          <input type="text" class="message" placeholder="Описание" />
+          <button class="add">Add</button>
+        </div>
+        <div class="wrapper">
+          <ul class="todo"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="todo.js"></script>
   </body>
 </html>

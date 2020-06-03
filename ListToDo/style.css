@@ -1,69 +1,103 @@
-* {
-  box-sizing: border-box;
-}
 body {
-  margin: 0;
-  background: chocolate;
-  background-size: 10px 10px;
+  background-color: #ffd78a;
+  font-family: sans-serif;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
 }
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
+.container {
+  margin: 0 auto;
+  padding-top: 50px;
 }
-nav a {
-  display: block;
-  text-decoration: none;
-  outline: none;
-  transition: 0.4s ease-in-out;
-}
-.topmenu {
-  backface-visibility: hidden;
-  background: rgba(255, 255, 255, 0.8);
-}
-.topmenu > li {
-  display: inline-block;
-  position: relative;
-}
-.topmenu > li > a {
-  font-family: "Exo 2", sans-serif;
-  height: 70px;
-  line-height: 70px;
-  padding: 0 30px;
+
+.important {
   font-weight: bold;
-  color: #003559;
-  text-transform: uppercase;
+  color: #a40e11;
 }
-.down:after {
-  content: "\f107";
-  margin-left: 8px;
-  font-family: FontAwesome;
+
+.todo_list {
+  max-width: 400px;
+  display: block;
+  margin: 0 auto 40px;
+  background-color: #1ba39c;
+  padding: 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 10px 0 #074b83;
+  box-shadow: 0 2px 10px 0 #074b83;
 }
-.topmenu li a:hover {
-  color: #e6855f;
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 30px;
 }
-.submenu {
-  background: white;
-  border: 2px solid #003559;
-  position: absolute;
-  left: 0;
-  visibility: hidden;
+
+.create_new_todo {
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 376px;
+  padding: 10px;
+}
+
+button {
+  margin-top: 10px;
+  width: 400px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.todo {
+  padding-left: 0;
+}
+.todo li {
+  padding: 1em;
+  list-style-type: none;
+}
+.todo li:not(:last-child) {
+  border-bottom: 1px solid #000;
+}
+
+input[type="checkbox"] {
   opacity: 0;
-  z-index: 5;
-  width: 150px;
-  transform: perspective(600px) rotateX(-90deg);
-  transform-origin: 0% 0%;
-  transition: 0.6s ease-in-out;
+  position: absolute;
 }
-.topmenu > li:hover .submenu {
-  visibility: visible;
-  opacity: 1;
-  transform: perspective(600px) rotateX(0deg);
+
+input[type="checkbox"],
+label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
 }
-.submenu li a {
-  color: #7f7f7f;
-  font-size: 13px;
-  line-height: 36px;
-  padding: 0 25px;
-  font-family: "Kurale", serif;
+
+input[type="checkbox"] + label:before {
+  content: "";
+  background: #1ba39c;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+input[type="checkbox"]:checked + label:before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 5px;
+  border: solid blue;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  border-radius: 0;
+  margin: 0 15px 5px 5px;
 }

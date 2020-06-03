@@ -35,10 +35,6 @@ body {
 
 .date {
   font-size: 25px;
-  position: absolute;
-  margin: 0;
-  top: 17px;
-  right: 20px;
 }
 
 ul {
